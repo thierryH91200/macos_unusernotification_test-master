@@ -27,26 +27,9 @@ class ViewController: NSViewController {
         self.center = UNUserNotificationCenter.current()
         self.center?.delegate = self.handler
         self.initNotifications()
-        self.requestPermission()
         notificationsHelper.requestPermission(for:  [.alert, .sound, .badge])
     }
             
-    public func requestPermission(for authorization: UNAuthorizationOptions = []) {
-
-        self.center?.requestAuthorization(
-            options: authorization) { (permissionGranted, error) in
-                guard let checkedError = error else {
-                    if !permissionGranted {
-                        print("Notification permission denied")
-                    } else {
-                        print("Notification permission granted")
-                    }
-                    return
-                }
-                print("ERROR:::", checkedError.localizedDescription)
-        }
-    }
-
     private func initNotifications() {
         guard let center = self.center else { return }
         

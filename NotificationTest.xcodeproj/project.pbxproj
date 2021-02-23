@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0309553D25E2A0D0008B19D9 /* NotificationsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0309553C25E2A0D0008B19D9 /* NotificationsHelper.swift */; };
-		03AC6B8025E3A198004C7223 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03AC6B8225E3A198004C7223 /* Localizable.strings */; };
+		03AC6B8025E3A198004C7223 /* notification.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03AC6B8225E3A198004C7223 /* notification.strings */; };
 		0AE2DD3B236033BB0029CE77 /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2DD3A236033BB0029CE77 /* NotificationHandler.swift */; };
 		0AE2DD3D236034FA0029CE77 /* NotificationActionsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2DD3C236034FA0029CE77 /* NotificationActionsEnum.swift */; };
 		321848D1234F171300FE1AD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321848D0234F171300FE1AD8 /* AppDelegate.swift */; };
@@ -35,8 +35,8 @@
 		0309553C25E2A0D0008B19D9 /* NotificationsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsHelper.swift; sourceTree = "<group>"; };
 		03AC6B7D25E3A175004C7223 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		03AC6B7F25E3A184004C7223 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		03AC6B8125E3A198004C7223 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		03AC6B8325E3A19E004C7223 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		03AC6B8125E3A198004C7223 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/notification.strings; sourceTree = "<group>"; };
+		03AC6B8325E3A19E004C7223 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/notification.strings; sourceTree = "<group>"; };
 		0AE2DD3A236033BB0029CE77 /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
 		0AE2DD3C236034FA0029CE77 /* NotificationActionsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationActionsEnum.swift; sourceTree = "<group>"; };
 		321848CD234F171300FE1AD8 /* NotificationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotificationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +60,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03AC6B8725E3C034004C7223 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				0AE2DD3A236033BB0029CE77 /* NotificationHandler.swift */,
+				0AE2DD3C236034FA0029CE77 /* NotificationActionsEnum.swift */,
+				0309553C25E2A0D0008B19D9 /* NotificationsHelper.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
 		321848C4234F171300FE1AD8 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +89,7 @@
 		321848CF234F171300FE1AD8 /* NotificationTest */ = {
 			isa = PBXGroup;
 			children = (
+				03AC6B8725E3C034004C7223 /* Notification */,
 				321848D0234F171300FE1AD8 /* AppDelegate.swift */,
 				321848D2234F171300FE1AD8 /* ViewController.swift */,
 				321848D4234F171900FE1AD8 /* Assets.xcassets */,
@@ -86,10 +97,7 @@
 				321848D9234F171900FE1AD8 /* Info.plist */,
 				321848F6234F628800FE1AD8 /* NSImage.swift */,
 				321848DA234F171900FE1AD8 /* NotificationTest.entitlements */,
-				0AE2DD3A236033BB0029CE77 /* NotificationHandler.swift */,
-				0AE2DD3C236034FA0029CE77 /* NotificationActionsEnum.swift */,
-				0309553C25E2A0D0008B19D9 /* NotificationsHelper.swift */,
-				03AC6B8225E3A198004C7223 /* Localizable.strings */,
+				03AC6B8225E3A198004C7223 /* notification.strings */,
 			);
 			path = NotificationTest;
 			sourceTree = "<group>";
@@ -155,7 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				321848D5234F171900FE1AD8 /* Assets.xcassets in Resources */,
-				03AC6B8025E3A198004C7223 /* Localizable.strings in Resources */,
+				03AC6B8025E3A198004C7223 /* notification.strings in Resources */,
 				321848D8234F171900FE1AD8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,13 +187,13 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		03AC6B8225E3A198004C7223 /* Localizable.strings */ = {
+		03AC6B8225E3A198004C7223 /* notification.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				03AC6B8125E3A198004C7223 /* en */,
 				03AC6B8325E3A19E004C7223 /* fr */,
 			);
-			name = Localizable.strings;
+			name = notification.strings;
 			sourceTree = "<group>";
 		};
 		321848D6234F171900FE1AD8 /* Main.storyboard */ = {
